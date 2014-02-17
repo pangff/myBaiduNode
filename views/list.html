@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<link href="./stylesheets/ajaxfileupload.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var url = "http://bcs.duapp.com/nodemedia?sign=MBO:TmxTu2t2kGKLO0oIRGhO8ib6:1NQva%2B6z8BEZMaJ4ExGGG51lFaA%3D";
+		$.ajax({
+				url : url,
+				type : "GET",
+				beforeSend : function(xhr) {
+					xhr.overrideMimeType("text/plain; charset=x-user-defined");
+				}
+			}).done(function(data) {
+				alert(data.object_list);
+				if (console && console.log) {
+					console.log("Sample of data:", data);
+				}
+			});
+	});
+	</script>
+</head> 
+<body>
+	<div>百度云文件地址:</div>
+	<div id="filelistDiv">
+	  <a href="/show"></a>
+	</div>
+</body> 
+</html>
