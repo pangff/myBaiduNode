@@ -2,9 +2,9 @@
 {
   "name": "mynode",
   "version": "0.1.0",
-  "subdomain":"pffair", 
+  "subdomain":"pffair2", 
   "description": "myVedio",
-  "main": "./server/index.js",
+  "main": "./app.js",
   "scripts":{"start":"./app.js"},
   "repository": "",
   "keywords": [
