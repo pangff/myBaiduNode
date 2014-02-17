@@ -12,6 +12,7 @@
 		      file = files[0];
 		    });
 			$('#buttonUpload').click(function() {
+				alert(file.name);
 				formData = new FormData();
 				formData.append("upload",file);
 				var url = "http://bcs.duapp.com/nodemedia/test.txt?sign=MBO:TmxTu2t2kGKLO0oIRGhO8ib6:RxY9jcEzXkpLYH6Q%2F83mcgIGtkA%3D";

@@ -12,10 +12,10 @@
 		      file = files[0];
 		    });
 			$('#buttonUpload').click(function() {
-				alert(file.Name);
+				alert(file.name);
 				formData = new FormData();
 				formData.append("upload",file);
-				var url = "http://bcs.duapp.com/nodemedia/"+file.Name
+				var url = "http://bcs.duapp.com/nodemedia/"+file.name
 				$.ajax({
 						url : url,
 						type : "POST",
